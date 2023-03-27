@@ -1,0 +1,70 @@
+.App {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: #282c34;
+}
+
+.cards-wrapper {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border:1px solid red;
+}
+
+.top-cards,
+.bottom-cards {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.top-cards {
+  top: 0
+}
+
+.bottom-cards {
+  bottom: 0;
+  align-items: flex-end;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  border: 1px solid #fff;
+
+  //&:only-child {
+  //  transform: translate(0, -138%) rotate(0);
+  //}
+  //
+  //&:nth-child(1):nth-child(2):nth-last-child(3) {
+  //
+  //}
+
+  //@for $j from 1 through 9 {
+  //  @if ($i == 9) {
+  //    $degrees: -25deg, -20deg, -10deg, -5deg, 0deg, 5deg, 10deg, 20deg, 25deg;
+  //    $top: -104%, -118%, -129%, -135%, -138%, -135%, -129%, -118%, -104%;
+  //    $bottom-card-static: 8;
+  //    &:nth-child(#{$j}) {
+  //      transform: translate(($bottom-card-static + 54% * $j), nth($top, $j)) rotate(nth($degrees, $j));
+  //
+  //      &.board__card--show {
+  //        transform: translate(($bottom-card-static + 54% * $j), -160%);
+  //      }
+  //
+  //      &.board__card--all-you {
+  //        transform: translate(($bottom-card-static + 54% * $j), -180%);
+  //        opacity: 0;
+  //      }
+  //    }
+  //  }
+  //}
+}
